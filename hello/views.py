@@ -15,3 +15,8 @@ def index(request):
     
 def gif(request):
     return HttpResponseRedirect('https://i.imgur.com/pXjrQ.gif')
+    
+def robots(request):
+    content = '<html>fillertext</html>'
+    response = HttpResponse(content, content_type='text/plain; charset=utf-8')
+    return response
