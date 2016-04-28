@@ -10,3 +10,7 @@ def index(request):
     r = "Hello World"
     print r
     return HttpResponse(r)
+    
+    
+def foo(request):
+    print "woot"
