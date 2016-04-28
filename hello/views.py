@@ -14,3 +14,7 @@ def index(request):
     
 def foo(request):
     print "woot"
+    
+    
+def gif(request):
+    print "https://i.imgur.com/pXjrQ.gif gif placeholder"
