@@ -6,6 +6,8 @@ import urllib2, httplib
 
 from .models import Greeting
 
+pid = 0
+
 # Create your views here.
 def index(request):
     r = "Hello World!"
