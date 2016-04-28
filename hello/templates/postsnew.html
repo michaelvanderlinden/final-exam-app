@@ -5,7 +5,7 @@
   </head>
   <body>
 
-<form action="/posts/new" method="post">
+<form action="/posts/new" method="post">{% csrf_token %}
     <label for="newpost">New Post: </label>
     <input id="posttext" type="text" name="posttext" value="Your Post Here">
     <input type="submit" value="OK">
