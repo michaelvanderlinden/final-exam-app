@@ -31,7 +31,7 @@ def posts(request):
 def postsnew(request):
     if request.method == 'POST':
         #submit form
-        return HttpResponse('posted to postsnew')
+        return HttpResponseRedirect('/posts/0')
     else:
         #GET request
         return render(request, 'postsnew.html')
