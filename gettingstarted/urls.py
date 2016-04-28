@@ -11,6 +11,6 @@ import hello.views
 
 urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
-    url(r'^mrw/semester-ends.gif', hello.views.gif, name='gif'),
+    url(r'^mrw/class-is-done.gif', hello.views.gif, name='gif'),
     url(r'^admin/', include(admin.site.urls)),
 ]
