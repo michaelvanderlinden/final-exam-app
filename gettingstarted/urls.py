@@ -13,7 +13,7 @@ urlpatterns = [
     url(r'^$', hello.views.index, name='index'),
     url(r'^mrw/class-is-done.gif', hello.views.gif, name='gif'),
     url(r'^robots.txt', hello.views.robots, name='robots'),
-    url(r'^posts/:id', hello.views.posts, name = 'posts'),
-    url(r'^posts/new', hello.views.posts, name = 'postsnew'),
+    url(r'^posts/:id$', hello.views.posts, name = 'posts'),
+    url(r'^posts/new$', hello.views.postsnew, name = 'postsnew'),
     url(r'^admin/', include(admin.site.urls)),
 ]

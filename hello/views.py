@@ -27,4 +27,9 @@ def posts(request):
     
     
 def postsnew(request):
-    return HttpResponse("New Post!")
+    if request.method == 'POST':
+        #submit form
+        return HttpResponse('posted to postsnew')
+    else:
+        #GET request
+        return render(request, 'postsnew.html')
