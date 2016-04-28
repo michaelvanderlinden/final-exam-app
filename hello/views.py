@@ -20,3 +20,7 @@ def robots(request):
     content = 'fillertext'
     response = HttpResponse(content, content_type='text/plain; charset=utf-8')
     return response
+    
+    
+def posts(request):
+    return HttpResponse("Posts Page!")
