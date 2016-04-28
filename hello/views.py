@@ -7,15 +7,13 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    r = "Hello World"
+    r = "Hello World!"
     print r
     return HttpResponse(r)
     
     
-def foo(request):
-    print "woot"
-    return HttpResponse()
+
     
 def gif(request):
-    print "https://i.imgur.com/pXjrQ.gif gif placeholder"
-    return HttpResponse()
+    html =  "gif request"
+    return HttpResponse(html)
