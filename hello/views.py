@@ -14,7 +14,8 @@ def index(request):
     
 def foo(request):
     print "woot"
-    
+    return HttpResponse()
     
 def gif(request):
     print "https://i.imgur.com/pXjrQ.gif gif placeholder"
+    return HttpResponse()
