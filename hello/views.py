@@ -1,6 +1,7 @@
 import requests
 from django.shortcuts import render
 from django.http import HttpResponse
+from django.http import HttpResponseRedirect
 import urllib2, httplib
 
 from .models import Greeting
@@ -12,8 +13,5 @@ def index(request):
     return HttpResponse(r)
     
     
-
-    
 def gif(request):
-    html =  "gif request"
-    return HttpResponse(html)
+    return HttpResponseRedirect('https://i.imgur.com/pXjrQ.gif')
