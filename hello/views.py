@@ -24,3 +24,7 @@ def robots(request):
     
 def posts(request):
     return HttpResponse("Posts Page!")
+    
+    
+def postsnew(request):
+    return HttpResponse("New Post!")
